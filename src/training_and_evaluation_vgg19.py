@@ -34,7 +34,7 @@ def main():
     logging.info("GPU available: {}".format(tf.config.list_physical_devices('GPU')))
 
     # Generate data paths with labels
-    data_directory = '/home/goetz-2/DataSet/Ultrasound/Kaggle_BreastCancerDataset/archive/Dataset_BUSI_with_GT'
+    data_directory = '/path/to/data_dir'
     df = generate_data_paths_with_label(data_directory)
     logging.info('******************************************************************************')
     logging.info('Printing dataframe that contains image file paths and the corresponding labels')
